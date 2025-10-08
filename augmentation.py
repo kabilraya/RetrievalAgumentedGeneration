@@ -1,8 +1,8 @@
 from retrieval import retrieval
 from generation import chat
 
-def prompt_creation_and_api_calls():
-    query = "Compare the price of Samsung and Iphone Products please"
+def prompt_creation_and_api_calls(query:str):
+    
     #this gets the retrived products(combined and cleaned) from the query and creates the prompt
     augmented_document = retrieval(query)
     prompt = f"""
@@ -15,4 +15,4 @@ def prompt_creation_and_api_calls():
 
     #API CALL
     response = chat(prompt)
-    print(response.text)
+    return response

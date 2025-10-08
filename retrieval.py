@@ -33,7 +33,7 @@ def doc_retrieval(query:str):
     prefetch=prefetch,
     query = late_vectors,
     using = "lateInteraction",
-    limit = 5,
+    limit = 10,
     with_payload = True,
     with_vectors= False
     ).points
