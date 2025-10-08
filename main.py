@@ -3,7 +3,7 @@ from augmentation import prompt_creation_and_api_calls
 
 st.set_page_config(page_title="RAG Demo", layout="centered")
 
-st.title("RAG: Retrieval-Augmented Generation Demo")
+st.title("RAG: Retrieval-Augmented Generation for Daraz Items")
 st.write("Type your query below. The system will retrieve relevant documents and generate an answer.")
 
 query = st.text_input("Enter your query:", "")
